@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='my_stylesheet.css') }}">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+
+</head>
+
+<body>
+    <p class="hi">hi</p>
+    <div class="page">
+        <form action='/result' method='post'>
+            <p>Your Name <input type='text' name='name' name='username'></p>
+            <select class="form-select" aria-label="Default select example" name='location_select'>
+                <option selected>location</option>
+                <option value="1">San jose</option>
+                <option value="2">portland</option>
+                <option value="3">denver</option>
+            </select>
+            <select class="form-select" aria-label="Default select example" name='lang_select'>
+                <option selected>fave lang</option>
+                <option value="1">pythion</option>
+                <option value="2">js</option>
+                <option value="3">spanish</option>
+            </select>
+            <div class="input-group">
+                <span class="input-group-text">comments (optional)</span>
+                <textarea class="form-control" aria-label="With textarea" name="comments"></textarea>
+            </div>
+            <input type="submit" name="sub" id="submit" class="btn btn-primary">
+        </form>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</body>
+
+</html>

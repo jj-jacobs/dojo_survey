@@ -1,0 +1,11 @@
+form{
+    display: inline-block;
+    width: 400px;
+}
+.page{
+    width: auto;
+}
+.hi{
+    color: rgb(221, 14, 14);
+    font-size: 25px;
+}
